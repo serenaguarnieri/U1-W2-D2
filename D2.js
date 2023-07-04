@@ -37,7 +37,7 @@ numberf = 25;
 const numberc = 8;
 const numberd = 10;
 {
-  // console.log(numberc, numberd === 8); non valido
+  // console.log(numberc or numberd === 8);
   console.log(numberc + numberd === 8);
   console.log(numberc - numberd === 8);
 }
@@ -64,6 +64,11 @@ if (totalShoppingCart > 50) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+if (totalShoppingCart > 50) {
+  console.log("totalShoppingCart-20%");
+} else if (totalShoppingCart > 50) {
+  console.log("totalShoppingCart -20% + 10");
+}
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
@@ -136,22 +141,25 @@ const superhero = {
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-const arr = {
-  a: 1,
-  b: 2,
-  c: 3,
-  d: 4,
-  e: 5,
-  f: 6,
-  g: 7,
-  h: 8,
-  i: 9,
-  l: 10,
-};
+const arr = [];
+arr.push(1);
+arr.push(2);
+arr.push(3);
+arr.push(4);
+arr.push(5);
+arr.push(6);
+arr.push(7);
+arr.push(8);
+arr.push(9);
+arr.push(10);
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
+arr.splice(arr.length - 1, 1, 100);
+arr[arr.length - 1] = 1000;
+console.log(arr);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
